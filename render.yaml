@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: ai-crypto-trader
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: CB_API_KEY
+        sync: false
+      - key: CB_API_SECRET
+        sync: false
+      - key: CB_API_PASSPHRASE
+        sync: false
+      - key: TG_BOT_TOKEN
+        sync: false
+      - key: TG_CHAT_ID
+        sync: false
